@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Product Page</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-page">
+    <!-- Product Image Section -->
+    <div class="image-carousel">
+      <img id="main-image" src="images/headphone1.jpg" alt="Product Image">
+      <div class="thumbnails">
+        <img src="images/headphone1.jpg" alt="Thumbnail 1" onclick="changeImage('images/headphone1.jpg')">
+        <img src="images/headphone2.jpg" alt="Thumbnail 2" onclick="changeImage('images/headphone2.jpg')">
+      </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+      <h1 id="product-name">Wireless Headphones</h1>
+      <p id="product-description">High-quality sound with noise cancellation.</p>
+      <h2 id="product-price">$120.99</h2>
+      <p id="product-availability">Available: <span>In Stock</span></p>
+      <label for="variant">Choose Variant:</label>
+      <select id="variant">
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+      </select>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- Product Reviews Section -->
+    <div class="reviews">
+      <h3>Customer Reviews</h3>
+      <div class="review">
+        <strong>Alice</strong> (5/5): Amazing product!
+      </div>
+      <div class="review">
+        <strong>Bob</strong> (4/5): Good value for money.
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to External JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
